@@ -1,0 +1,321 @@
+/*	
+	Alexander Soromotin
+	Александр Соромотин
+ 	VK - @alexanderkyt
+
+ 	ver - 1.0
+ */
+
+/*/////////////////////////////////////////*/
+/*ТЕСТОВАЯ 1*/
+.btn1 {
+	position: relative;
+	outline: none;
+	background-color: rgba(0, 0, 0, 0);
+	text-align: center;
+	cursor: pointer;
+	overflow: hidden;
+}
+.btn1:before {
+	content: '';
+	transition: 0.3s height;
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 0%;
+	background-color: rgba(0, 0, 0, .15);
+}
+.btn1:hover:before {
+	height: 100%;
+}
+/*/////////////////////////////////////////*/
+/*ТЕСТОВАЯ 2*/
+.btn2 {
+	position: relative;
+	outline: none;
+	background-color: rgba(0, 0, 0, 0);
+	text-align: center;
+	cursor: pointer;
+	overflow: hidden;
+}
+.btn2:before {
+	content: '';
+	transition: 0.3s width;
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 0%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .15);
+}
+.btn2:hover:before {
+	width: 100%;
+}
+/*/////////////////////////////////////////*/
+/*ТЕСТОВАЯ 3*/
+.btn3 {
+	position: relative;
+	outline: none;
+	background-color: rgba(0, 0, 0, 0);
+	text-align: center;
+	cursor: pointer;
+	overflow: hidden;
+}
+.btn3:before {
+	content: '';
+	transition: 0.3s height;
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 0%;
+	background-color: rgba(0, 0, 0, .15);
+}
+.btn3:hover:before {
+	height: 100%;
+}
+/*/////////////////////////////////////////*/
+/*ТЕСТОВАЯ 4*/
+.btn4 {
+	position: relative;
+	outline: none;
+	background-color: rgba(0, 0, 0, 0);
+	text-align: center;
+	cursor: pointer;
+	overflow: hidden;
+}
+.btn4:before {
+	content: '';
+	transition: 0.3s width;
+	display: block;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 0%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .15);
+}
+.btn4:hover:before {
+	width: 100%;
+}
+/*/////////////////////////////////////////*/
+/*ТЕСТОВАЯ 5*/
+.btn5 {
+	position: relative;
+	outline: none;
+	background-color: rgba(0, 0, 0, 0);
+	text-align: center;
+	cursor: pointer;
+	overflow: hidden;
+}
+.btn5:before {
+	content: '';
+	transition: 0.3s transform;
+	display: block;
+	position: absolute;
+	left: -50px;
+	bottom: 0;
+	width: 150%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .15);
+	transform-origin: 0% 100% 0;
+	transform: rotateZ(-90deg);
+
+}
+.btn5:hover:before {
+	transform: rotateZ(0deg);
+}
+/*/////////////////////////////////////////*/
+/*ТЕСТОВАЯ 6*/
+.btn6 {
+	position: relative;
+	outline: none;
+	background-color: rgba(0, 0, 0, 0);
+	text-align: center;
+	cursor: pointer;
+	overflow: hidden;
+}
+.btn6:before {
+	content: '';
+	transition: 0.5s;
+	transition-property: transform;
+	display: block;
+	position: absolute;
+	left: 50%;
+	bottom: 50%;
+	transform: translate(-50%, -50%);
+	width: 1px;
+	height: 1px;
+	background-color: rgba(0, 0, 0, .15);
+	border-radius: 50%;
+
+}
+.btn6:hover:before {
+	transform: scale(400);
+}
+/*/////////////////////////////////////////*/
+/*ТЕСТОВАЯ 7*/
+.btn7 {
+	position: relative;
+	outline: none;
+	background-color: rgba(0, 0, 0, 0);
+	text-align: center;
+	cursor: pointer;
+	overflow: hidden;
+}
+.btn7:before {
+	content: '';
+	transition: 0.5s;
+	transition-property: transform;
+	display: block;
+	position: absolute;
+	left: 50%;
+	bottom: 50%;
+	transform: translate(-50%, -50%) scale(400);
+	width: 1px;
+	height: 1px;
+	background-color: rgba(0, 0, 0, .15);
+	border-radius: 50%;
+
+}
+.btn7:hover:before {
+	transform: scale(1);
+}
+/*/////////////////////////////////////////*/
+/*ТЕСТОВАЯ 8*/
+.btn8 {
+	position: relative;
+	outline: none;
+	background-color: rgba(0, 0, 0, 0);
+	text-align: center;
+	cursor: pointer;
+	overflow: hidden;
+}
+.btn8:before {
+	content: '';
+	transition: 0.3s;
+	transition-property: width;
+	display: block;
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	transform: translateX(-50%);
+	width: 0%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .15);
+
+}
+.btn8:hover:before {
+	width: 100%;
+}
+/*/////////////////////////////////////////*/
+/*ТЕСТОВАЯ 9*/
+.btn9 {
+	position: relative;
+	outline: none;
+	background-color: rgba(0, 0, 0, 0);
+	text-align: center;
+	cursor: pointer;
+	overflow: hidden;
+}
+.btn9:before {
+	content: '';
+	transition: 0.3s;
+	transition-property: padding;
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100%;
+	height: 0%;
+	background-color: rgba(0, 0, 0, .15);
+	padding: 1.9em 0 1.9em 0;
+
+}
+.btn9:hover:before {
+	padding: 0;
+}
+/*/////////////////////////////////////////*/
+/*ТЕСТОВАЯ 10*/
+.btn10 {
+	position: relative;
+	outline: none;
+	background-color: rgba(0, 0, 0, 0);
+	text-align: center;
+	cursor: pointer;
+	overflow: hidden;
+}
+.btn10:before {
+	content: '';
+	transition: 0.3s;
+	transition-property: padding;
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100%;
+	height: 0%;
+	background-color: rgba(0, 0, 0, .15);
+	padding: 0;
+}
+.btn10:hover:before {
+	padding: 1.9em 0 1.9em 0;
+}
+/*/////////////////////////////////////////*/
+/*ТЕСТОВАЯ 11*/
+.btn11 {
+	position: relative;
+	outline: none;
+	background-color: rgba(0, 0, 0, 0);
+	text-align: center;
+	cursor: pointer;
+	overflow: hidden;
+}
+.btn11:before {
+	content: '';
+	transition: 0.4s left;
+	display: block;
+	position: absolute;
+	left: -120%;
+	bottom: 0;
+	width: 120%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .15);
+	border-radius: 35px;
+}
+.btn11:hover:before {
+	left: -10%;
+}
+/*/////////////////////////////////////////*/
+/*ТЕСТОВАЯ 12*/
+.btn12 {
+	position: relative;
+	outline: none;
+	background-color: rgba(0, 0, 0, 0);
+	text-align: center;
+	cursor: pointer;
+	overflow: hidden;
+}
+.btn12:before {
+	content: '';
+	transition: 0.3s;
+	transition-property: width;
+	display: block;
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	transform: translateX(-50%);
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .15);
+
+}
+.btn12:hover:before {
+	width: 0%;
+}

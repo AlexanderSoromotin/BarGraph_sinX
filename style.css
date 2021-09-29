@@ -1,0 +1,83 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #fff;
+}
+
+
+
+/*########################################*/
+/*####=- Стиль блока колонн -=############*/
+
+.area {
+	transition: 1s height;
+	background-color: rgba(0, 0, 0, .1);
+	position: absolute;
+	width: 90%;
+	height: 500px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	text-align: flex-start;
+	overflow: hidden;
+	padding: 30px;
+}
+.area_list {
+	white-space: nowrap;
+	position: relative;
+	/*float: right;*/
+}
+.area_list div {
+	text-align: right;
+	transition: 1s;
+	transition-timing-function: cubic-bezier(.23,.75,.25,1);;
+	transition-property: width, height, margin;
+	content: " ";
+	position: relative;
+	width: 0px;
+	margin: 0px;
+	background-color: #A0A0A0;
+	bottom: 1px;
+	display: inline-block;
+	margin-left: 0px;
+	bottom: 0;
+	white-space: nowrap;
+	transform-origin: 50% 100%;
+}
+
+/*########################################*/
+/*####=- Стиль блока настроек -=##########*/
+
+button {
+	padding: 10px;
+	font-size: 16px;
+	border: 1px solid #000;
+	outline: none;
+	margin-top: 10px;
+}
+.settings {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin-top: -370px;
+	white-space: nowrap;
+}
+.settings input {
+	padding: 10px;
+	border: 1px solid black;
+	outline: none;
+}
+.settings div {
+	display: inline-block;	
+}
+h5 {
+	font-weight: 300;
+	color: rgba(0, 0, 0, 0.5);
+}
+.area_list_colibration {
+	transition: 1s height;
+}

@@ -1,0 +1,70 @@
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>График функции sin(x)</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="buttons.css">
+</head>
+<body>
+	
+	<!-- Блок колонн -->
+	<div class="area">
+		<div class="area_list">
+			<!-- Первая колонна задаёт цент оси -->
+			<div><div class='area_list_colibration' style='height: 300px; width: 0px;'></div></div>
+		</div>
+	</div>
+
+	<!-- Настройки -->
+	<div class="settings">
+		<div title="Ширина одной колонны (измеряется в пикселях)">
+			<h5>Ширина колонны</h5>
+			<input type="" placeholder="Ширина колонны" class="columnWidth" value="20">
+		</div>
+
+		<div title="Отсутп между колоннами (измеряется в пикселях)">
+			<h5>Отсутп между колоннами</h5>
+			<input type="" placeholder="Отсутп между колоннами" class="columnMargin" value="2">
+		</div>
+
+		<!-- <div title="Максимальная возможная высота колонн (измеряется в пикселях)">
+			<h5>Макс. высота колонны</h5>
+			<input type="" placeholder="Макс. высота колонны" class="columnHeight" value="200">
+		</div> -->
+
+		<div title="Итервал между появлениями колонн (измеряется в миллисекундах (200 = 0.2 сек))">
+			<h5>Скорость появления</h5>
+			<input type="" placeholder="Скорость появления" class="intervalDelay" value="100">
+		</div>
+
+		<div title="Коэффициент, с которым будет изменяться высота колонн">
+			<h5>Коэффициент синуса</h5>
+			<input type="" placeholder="Коэффициент синуса" class="kSin" value="0.2">
+		</div>
+
+		<div title="Лимит колонн. Для снижения нагрузки на браузер. Колонны с порядковым номером свыше того, что указан, будут удаляться">
+			<h5>Лимит колонн</h5>
+			<input type="" placeholder="Лимит колонн" class="columnsLimit" value="200">
+		</div>
+
+		<br>
+
+		<center>
+			<button class="btn5 settings_save">Сохранить</button>
+		</center>
+	</div>
+
+	<script src="http://code.jquery.com/jquery-3.5.1.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
+
+<!-- 
+	
+	Alexander Soromotin
+	Александр Соромотин
+ 	VK - @alexanderkyt
+
+ 	ver - 1.0
+
+ -->
